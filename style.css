@@ -1,0 +1,30 @@
+p {
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  border: 5px;
+  color:#ffffa0;
+
+
+}
+
+ul {
+  font-family: Georgia, Times;
+  font-weight: bold;
+  color:#0088ff;
+}
+
+
+body{
+    background-color:#ffc3a0;
+    font-family: Arial,Verdana,Helvetica;
+    color:#0000aa;
+
+}
+
+
+
+/*.hoursofOperation{
+  vertical-align: top-left;
+}
+*/
