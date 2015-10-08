@@ -46,17 +46,17 @@ this.makeUL = function(){
    //connect to the list to the JS;this is where ur list will appear
    for (var i = 0; i < hourOperation.length; i++) {
       //Create the list item
-      var item = document.createElement('li');
+      var item = document.createElement('td');
       //Set its content
-      var text = document.createTextNode(hourOperation[i] + ' Cookies Per Day ' + this.cookiesByHourList[i]);
+      var text = document.createTextNode(this.cookiesByHourList[i]);// + 'Cookies Per Day'
       //Add it to the list
       item.appendChild(text);
       list.appendChild(item);
     }
 
-    var item = document.createElement('li');
+    var item = document.createElement('td');
     //Set its content
-    var text =document.createTextNode("daily total: " + this.totalCookiesDay());
+    var text =document.createTextNode(this.totalCookiesDay());
     //Add it to the list
     item.appendChild(text);
     list.appendChild(item);
