@@ -73,7 +73,7 @@ var alki =new CookiesStand('Alki Beach',3,24,2.6,"alki");
 
 //////////////////////////////FORMS/////////////////////////////////////////
 
-//Storing the value of subit ID
+//A reference to the DOM element Node is stored in a variable submit
 var submit = document.getElementById("submit");
 
 // Connecting HTML and JS through IDs
@@ -90,6 +90,6 @@ var formCookieInfo = function(event){
 }
 
 // target.event('user_action', function);
-//
+//DOMelement.addEventListener('event',functionName[,Boolean]);
 submit.addEventListener('click', formCookieInfo);
-
+//'click'-The event name is enclosed in quotation marks
