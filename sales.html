@@ -3,12 +3,10 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
 <table>
-
 <h3>Pat's Salmon Cookies</h3>
-
 <p>Random generated Cookies produced per day in different locations</p>
-
 <tr>
   <th>Location</th>
   <th>10am</th>
@@ -21,41 +19,36 @@
   <th>5pm</th>
   <th>Total</th>
 </tr>
-
 <tr id='pike'><th>Pike Place Market</th></tr>
-
 <tr id='seatac'><th>SeaTac Airport</th></tr>
-
 <tr id='southcenterMall'><th>South Center Mall</th></tr>
-
 <tr id='belleSquare'><th>Bellevue Square Mall</th></tr>
-
 <tr id='alki'><th>Alki Beach</th></tr>
-
-
 </table>
-
-<script src="app.js"></script>
-
-</body>
 
 <form>
 <fieldset>
 <Legend>Enter stand information:</Legend>
 Location:<br>
-<input type="text" name="firstname" value="">
+<input type="text" name="location" id='location'>
 <br>
 MinCustHour:<br>
-<input type="text" name="lastname" value="">
+<input type="text" name="min" id='min'>
 <br>
 MaxCustHour:<br>
-<input type="text" name="firstname" value="">
+<input type="text" name="max" id='max'>
 <br>
 AvgCookies:<br>
-<input type="text" name="firstname" value=""><br>
-<input type="submit" value="Submit">
+<input type="text" name="avg" id='avg'>
+<br>
+<input type="submit" value="Submit" id='submit'>
 </fieldset>
 </form>
+
+<script src="app.js"></script>
+
+</body>
+
 
 
 

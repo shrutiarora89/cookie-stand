@@ -71,18 +71,25 @@ var southcenterMall = new CookiesStand('Southcenter Mall',11,38,1.9,"southcenter
 var bellevueSquare =new CookiesStand('Bellevue Square',20,48,3.3,"belleSquare");
 var alki =new CookiesStand('Alki Beach',3,24,2.6,"alki");
 
+//////////////////////////////FORMS/////////////////////////////////////////
 
-// pikePlace.makeUL(hourOperation);
+//Storing the value of subit ID
+var submit = document.getElementById("submit");
 
+// Connecting HTML and JS through IDs
+var formCookieInfo = function(event){
+  event.preventDefault();
+  var location = document.getElementById("location").value;
+  var min = document.getElementById("min").value;
+  var max = document.getElementById("max").value;
+  var avg = document.getElementById("avg").value;
+  console.log(location);
+  console.log(min);
+  console.log(max);
+  console.log(avg);
+}
 
-// console.log(dailyCookies());
-
-// console.dir(pikePlace);
-// console.dir(seaTacAirport);
-// console.dir(southcenterMall);
-// console.dir(bellevueSquare);
-// console.dir(alki);
-
-
-
+// target.event('user_action', function);
+//
+submit.addEventListener('click', formCookieInfo);
 
