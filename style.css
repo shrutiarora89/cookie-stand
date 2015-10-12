@@ -1,61 +1,70 @@
-#logo{
-  font-family: 'Lobster', cursive;
-  font-size: 34px;
-}
+
+
+  /*++++++++++++++++++++++++++++++++index.html+++++++++++++++++++++++++++++++++++++++*/
+
+/*#logo{
+
+}*/
 header{
   margin-top: 25px;
-  margin-left: 15px;
+  margin-left: 5px;
   width:100%;
-  background-color: rgba(0,0,0,.75);
+  height:160px;
+  background-color:rgba(252, 219, 219, 0.35);
   color:#fff;
-  text-align: center;}
+  text-align: center;
+}
+
 
   h1{
     width:100%;
     background-color: rgba(0,0,0,.75);
     color:#fff;
     text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 34px;
   }
 
-  h2{
-color:grey;
-  }
-
-
-  #hoursofOperation{
-    width:35%;
-  }
-  ul {
-    font-family: Georgia, Times;
-    font-weight: bold;
-    color:#000000;
-  }
-  li{
-    width:55%;
-    font-family: georgia;
-  }
-/*aside{
-  width:230px;
-
-  }*/
-  body{
-    /*background-color:#ffc3a0;*/
-    font-family: Arial,Verdana,Helvetica;
-/*      color:#000000;
-*/      /*background-image:url(http://www.treatboxseattle.com/
-  wp-content/uploads/2015/04/Assorted-Cookies.jpg);*/
+h2{
+    color:#990033;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    margin-top: 15px;
 }
 
-/*#logo{
-  font-family: 'Lobster', cursive;
-  font-size: 30px;
-  text-align: center;
-  }*/
+
+.hoursofOperation,hr{
+    font-family: Georgia, ;
+    /*width:60%;*/
+
+  }
 
 
-/*h2{
-  width:15%;
-  }*/
+  ul {
+    font-family: Georgia;
+/*    font-weight: bold;
+*/    color:#000000;
+  }
+
+  li{
+    width:55%;
+    font-family: Georgia, ;
+    margin:30px;
+  }
+
+  li:hover {
+    color:#990033;
+  }
+
+  body{
+   font-family: Arial,Verdana,Helvetica;
+  background-image:url(img/Gaussian-Cookies.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+}
+
+
   h3{
     font-family: 'Lobster', cursive;
     font-size: 25px;
@@ -68,19 +77,19 @@ color:grey;
     font-family: arial;
   }
 
-  header{
-    background-color:pink;
-/*    float:left;
-*/}
 
-.locations{
-  width:45%;
+
+#locations{
+  /*width:45%;*/
+  margin:10px;
+  padding: 10px;
+  border:10px;
 }
 
-.fourFishs{
+/*.fourFishs{
   float:right;
   vertical-align: top;
-}
+}*/
 
 .box{
   border: 5px solid black;
@@ -93,17 +102,22 @@ color:grey;
 
 #festivals{
   float: right;
-  width:35%;
-
-  background-color: lightblue;
+  /*width:43%;*/
+  background-color: rgba(20, 20, 16, 0.17);
 }
+
 
 article{
   /*display:inline-block;*/
   /*vertical-align: top;*/
 }
 
-  footer{
+#family{
+  border:2px solid black;
+  img: center;
+}
+
+footer{
     width:100%;
     background-color: rgba(0,0,0,.75);
     bottom:0;
@@ -112,31 +126,27 @@ article{
     text-align:center;
     position: fixed;
   }
-
-  /*++++++++++++++Table CSS+++++++++++++*/
-
-
-
-table{
-  width:100%;
+  /*----------------------STYLE GUIDE--------------------*/
+#fontForegroundTile{
+    background-color:#990033;
 }
 
-th,td{
-  padding:7px 10px 10px 10px;
+#headerRibbonTile{
+    background-color:rgba(252, 219, 219, 0.35);
 }
 
-th{
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border-bottom:2px solid #111111;
-  text-align: left;
+#headerbackgoundTile{
+    background-color:rgba(0,0,0,.75);
 }
 
-tr.even{
-  background-color: #efefef;
+#borderColorTile{
+    background-color:rgba(0,0,0,.75);
 }
 
-tr:hover{
-  background-color: #c3e6e5
-  };
-
+.colorpalette{
+  width:75px;
+  height:75px;
+  padding:30px;
+  border:2px black;
+  display: inline-block;
+}

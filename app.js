@@ -40,9 +40,19 @@ this.totalCookiesDay =function(){
 };
 //////////////Make Unordered List - Hours of Operation &  Total Cookies Day/////////////////////////////////////////////////////////////
 
-this.makeUL = function(){
+this.addToTable = function(){
   this.totalCookiesHour();
-  var list = document.getElementById(this.id);
+  var table = document.getElementById('table');
+  var row = document.createElement('tr');
+  table.appendChild(row);
+
+  var th = document.createElement('th');
+  th.innerHTML = this.place;
+  row.appendChild(th);
+//make a th, give it text for the value of the store's name
+//append it to the row
+//make all the tds with the actual numnbers, and append those to the row
+
    //connect to the list to the JS;this is where ur list will appear
    for (var i = 0; i < hourOperation.length; i++) {
       //Create the list item
@@ -51,17 +61,18 @@ this.makeUL = function(){
       var text = document.createTextNode(this.cookiesByHourList[i]);// + 'Cookies Per Day'
       //Add it to the list
       item.appendChild(text);
-      list.appendChild(item);
+      row.appendChild(item);
     }
 
     var item = document.createElement('td');
-    //Set its content
+    // //Set its content
     var text =document.createTextNode(this.totalCookiesDay());
-    //Add it to the list
+    // //Add it to the list
     item.appendChild(text);
-    list.appendChild(item);
+    row.appendChild(item);
   }
-  this.makeUL();
+
+  this.addToTable();
 };
 //////////////////INSTANCES/////////////////////////////////////////
 // creating instances
@@ -80,14 +91,22 @@ var submit = document.getElementById("submit");
 var formCookieInfo = function(event){
   event.preventDefault();
   var location = document.getElementById("location").value;
-  var min = document.getElementById("min").value;
-  var max = document.getElementById("max").value;
-  var avg = document.getElementById("avg").value;
+  var min = parseInt(document.getElementById("min").value);
+  var max = parseInt(document.getElementById("max").value);
+  var avg = parseInt(document.getElementById("avg").value);
+
+//---------------Adding Row to Table --------------------------
+
   console.log(location);
   console.log(min);
   console.log(max);
   console.log(avg);
+  var newStore = new CookiesStand(location,min,max,avg,"newStore");
+
 }
+
+//--------------------------------------------------------------
+
 
 // target.event('user_action', function);
 //DOMelement.addEventListener('event',functionName[,Boolean]);

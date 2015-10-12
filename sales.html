@@ -1,54 +1,87 @@
 <html>
-<head><title></title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+
+  <link rel="stylesheet" type="text/css" href="reset.css">
+
+  <!-- <title>Pat's Salmon Cookies</title> -->
+  <meta name="description"
+  content="Pat's Salmon Cookies">
+  <meta name="keywords" content="Pat's,Salmon,Cookies,Location,Time">
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="sales.css">
 </head>
 <body>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<header>
+  <h1 id='logo'>Pat's Salmon Cookies</h1>
+  <hgroup>
+    <img src="http://www.cookiesncream.com/products/DecoratedCookies/Animals%20and%20Pets/Sized/DECCKCFAPFFHFancyFishMED.jpg" style="height:125px;float:left;opacity:0.7;">
+    <img src="img/salmon.png" alt="Salmon" width ="200"/>
 
-<table>
-<h3>Pat's Salmon Cookies</h3>
-<p>Random generated Cookies produced per day in different locations</p>
-<tr>
-  <th>Location</th>
-  <th>10am</th>
-  <th>11am</th>
-  <th>12pm</th>
-  <th>1pm</th>
-  <th>2pm</th>
-  <th>3pm</th>
-  <th>4pm</th>
-  <th>5pm</th>
-  <th>Total</th>
-</tr>
-<tr id='pike'><th>Pike Place Market</th></tr>
-<tr id='seatac'><th>SeaTac Airport</th></tr>
-<tr id='southcenterMall'><th>South Center Mall</th></tr>
-<tr id='belleSquare'><th>Bellevue Square Mall</th></tr>
-<tr id='alki'><th>Alki Beach</th></tr>
-</table>
+    <h2>Salmon cookies made with fish,<br> Salmon cookies are delish!</h2>
+  </hgroup><br>
+</header>
 
-<form>
-<fieldset>
-<Legend>Enter stand information:</Legend>
-Location:<br>
-<input type="text" name="location" id='location'>
-<br>
-MinCustHour:<br>
-<input type="text" name="min" id='min'>
-<br>
-MaxCustHour:<br>
-<input type="text" name="max" id='max'>
-<br>
-AvgCookies:<br>
-<input type="text" name="avg" id='avg'>
-<br>
-<input type="submit" value="Submit" id='submit'>
-</fieldset>
-</form>
+</br>
+<section>
+      <article id= "tableBox">
+          <table id="table">
+            <h3>Sales</h3>
 
+          <tr>
+              <th>Location</th>
+              <th>10am</th>
+              <th>11am</th>
+              <th>12pm</th>
+              <th>1pm</th>
+              <th>2pm</th>
+              <th>3pm</th>
+              <th>4pm</th>
+              <th>5pm</th>
+              <th>Total</th>
+          </tr>
+          </table>
+            <p>* Random generated Cookies produced per day in different locations</p>
+      </article>
+
+      <article id = "formBox">
+          <form>
+          <h3>Form</h3>
+          <fieldset>
+          <Legend>Enter stand information:</Legend>
+          <br>
+          Location:<br>
+          <input type="text" name="location" id='location'>
+          <br>
+          <br>
+          MinCustHour:<br>
+          <input type="text" name="min" id='min'>
+          <br>
+          <br>
+          MaxCustHour:<br>
+          <input type="text" name="max" id='max'>
+          <br>
+          <br>
+          AvgCookies:<br>
+          <input type="text" name="avg" id='avg'>
+          <br>
+          <br>
+          <input type="submit" value="Submit" id='submit'>
+          </fieldset>
+          </form>
+      </article>
+</section>
+
+<footer>
+    &copy; Pat's Salmon Kitchen Copyright 2015
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="app.js"></script>
 
 </body>
-
+</html>
 
 
 
